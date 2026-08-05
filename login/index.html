@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Login | Painel de Controle</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h1 id="instrucao1">Acesse o painel</h1>
+            <p id="instrucao2">Realize login com suas informações de autenticação para visualizar, atualizar ou excluir informações do cardápio.</p>
+        </header>
+
+        <section id="formulario">
+            <form action="login.php" method="post">
+                <div>
+                    <label for="username">Nome de usuário</label>
+                    <input type="text" name="username" id="username" class="campo" placeholder="Digite seu username" autocomplete="username">
+                </div>
+                <br>
+                <div>
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" id="senha" class="campo" placeholder="Digite sua senha" required>
+                </div>
+                <br>
+                <button type="submit" id="botao">Entrar</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
