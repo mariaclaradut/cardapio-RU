@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #F5E2CE;
+    background: radial-gradient(circle, #FFE4E0 30%, #F9CBCB 100%);
+    width: 100dvw;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    align-content: center;
+    font-family: 'Inter', sans-serif;
+}
+
+main {    
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+header {
+    width: 550px;
+    margin: 0 auto;
+    text-align: center;
+    color: #B53324;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    & #instrucao1 {
+        font-family: 'Raleway', sans-serif;
+        font-size: 48px;
+        font-weight: bold;
+    }
+
+    & #instrucao2 {
+        color: #DB6355;
+        font-size: 20px;
+    }
+}
+
+section {
+    font-size: 20px;
+    padding: 20px;
+    margin: 0 auto;
+    width: 550px;
+    border: 1px solid #FFF8F0;
+    background-color: rgba(255, 248, 240, 0.5);
+    border-radius: 20px;
+    font-family: 'Inter', sans-serif;
+}
+
+label {
+    color: #B53324;
+}
+
+.campo {
+    width: 100%;
+    border: 1px solid #B53324;
+    background-color: rgba(181, 51, 36, 0.05);
+    padding: 15px;
+    height: 50px;
+    border-radius: 5px;
+    color: #B53324;
+}
+
+.campo::placeholder {
+    color: #DB6355;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+}
+
+.campo:focus {
+    border:2px solid #B53324;
+    outline: none;
+    transition: all 0.1s ease-in-out;
+}
+
+button {
+   width: 100%; 
+   height: 56px;
+   background-color: #B53324;
+   border: none;
+   border-radius: 10px;
+   color: #F4D3CF;
+   font-family: 'Inter', sans-serif;
+   font-size: 20px;
+}
+
+button:hover {
+    filter: drop-shadow(0 0 0.5rem #B53324);
+    transition: all 0.4s ease-in-out;
+}
