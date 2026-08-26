@@ -202,6 +202,167 @@ main {
     }
 }
 
+section {
+    font-size: 20px;
+    padding: 20px;
+    margin: 0 auto;
+    font-family: 'Inter', sans-serif;
+    text-align: left;
+    height: 100%;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+
+    & label {
+        color: #E5A657;
+    }
+
+    & .campo {
+        width: 100%;
+        border: 1px solid #DFBC94;
+        background-color: rgba(229, 166, 87, 0.05);
+        padding: 15px;
+        height: 50px;
+        border-radius: 5px;
+        color: #e29332;
+        font-size: 20px;
+    }
+    
+    & .campo::placeholder {
+        color: rgba(229, 166, 87, 0.5);
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+    }
+    
+    & .campo:focus {
+        border:2px solid #E5A657;
+        outline: none;
+        transition: all 0.1s ease-in;
+    }
+    
+    & .almoco {
+        resize: none;
+        border: 1px solid #DFBC94;
+        background-color: rgba(229, 166, 87, 0.05);
+        padding: 15px;
+        height: 110px;
+        border-radius: 5px;
+        color: #e29332;
+        display: block;
+        width: 100%;
+        font-size: 17px;
+    }
+    
+    & .almoco::placeholder {
+        color: rgba(229, 166, 87, 0.5);
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+    }
+
+    & .almoco:focus {
+        border:2px solid #E5A657;
+        outline: none;
+        transition: all 0.1s ease-in;
+    }
+
+    & hr {
+        border: 2px solid #E5A657;
+        border-radius: 30px;
+    }
+}
+
+.form-c2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+
+    & label {
+        color: #B53324;
+    }
+
+    & .campo {
+        width: 100%;
+        border: 1px solid #B53324;
+        background-color: rgba(181, 51, 36, 0.05);
+        padding: 15px;
+        height: 50px;
+        border-radius: 5px;
+        color: #e29332;
+        font-size: 20px;
+    }
+    
+    & .campo::placeholder {
+        color: rgba(212, 72, 72, 0.5);
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+    }
+    
+    & .campo:focus {
+        border:2px solid #B53324;
+        outline: none;
+        transition: all 0.1s ease-in;
+    }
+    
+    & .almoco {
+        resize: none;
+        border: 1px solid #B53324;
+        background-color: rgba(181, 51, 36, 0.05);
+        padding: 15px;
+        height: 110px;
+        border-radius: 5px;
+        color: #B53324;
+        display: block;
+        width: 100%;
+        font-size: 17px;
+    }
+    
+    & .almoco::placeholder {
+        color: rgba(212, 72, 72, 0.5);
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+    }
+
+    & .almoco:focus {
+        border:2px solid #B53324;
+        outline: none;
+        transition: all 0.1s ease-in;
+    }
+
+    hr {
+        border: 2px solid #B53324;
+        border-radius: 30px;
+    }
+}
+
+#obs {
+    resize: none;
+    border: 1px solid #B53324;
+    background-color: rgba(181, 51, 36, 0.05);
+    padding: 15px;
+    height: 100%;
+    border-radius: 5px;
+    color: #B53324;
+    display: block;
+    width: 100%;
+    font-size: 17px;
+}
+
+#obs ::placeholder {
+    color: rgba(212, 72, 72, 0.5);
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+}
+
+#obs :focus {
+    border:2px solid #B53324;
+    outline: none;
+    transition: all 0.1s ease-in;
+}
 
 footer {
     background-color: #B53324;
