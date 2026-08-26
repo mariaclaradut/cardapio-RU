@@ -21,6 +21,18 @@ main {
     display: flex;
     flex-direction: column;
     gap: 35px;
+    justify-content: center;
+    align-items: center;
+
+    & #instrucao3 {
+        color: #E5A657;
+        font-size: 20px;
+        
+        & a {
+            color: #E5A657;
+            font-weight: bolder;
+        }
+    }
 }
 
 header {
@@ -31,6 +43,7 @@ header {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    
     & #instrucao1 {
         font-family: 'Raleway', sans-serif;
         font-size: 48px;
