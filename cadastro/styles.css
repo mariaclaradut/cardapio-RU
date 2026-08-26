@@ -21,6 +21,18 @@ main {
     display: flex;
     flex-direction: column;
     gap: 35px;
+    justify-content: center;
+    align-items: center;
+
+    & #instrucao3 {
+        color: #B53324;
+        font-size: 20px;
+        
+        & a {
+            color: #B53324;
+            font-weight: bolder;
+        }
+    }
 }
 
 header {
