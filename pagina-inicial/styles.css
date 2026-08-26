@@ -35,6 +35,7 @@ header {
         background-color: #E5A657;
         color: #F5E2CE;
         font-family: "Inter", sans-serif;
+        cursor: pointer;
     }
 
     & #btn-login:hover {
