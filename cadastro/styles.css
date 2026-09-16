@@ -101,6 +101,7 @@ button {
    color: #F4D3CF;
    font-family: 'Inter', sans-serif;
    font-size: 20px;
+    font-weight: bolder;
 }
 
 button:hover {
