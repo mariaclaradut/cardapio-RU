@@ -1,110 +1,107 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+@import url('../global.css');
 
 body {
     background: #F5E2CE;
     background: radial-gradient(circle, #FFE4E0 30%, #F9CBCB 100%);
-    width: 100dvw;
-    height: 100dvh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin: auto;
-    align-content: center;
-    font-family: 'Inter', sans-serif;
-}
-
-main {    
-    display: flex;
-    flex-direction: column;
-    gap: 35px;
     justify-content: center;
     align-items: center;
+    padding: 30px 16px;
+}
 
-    & #instrucao3 {
-        color: #B53324;
-        font-size: 20px;
-        
-        & a {
-            color: #B53324;
-            font-weight: bolder;
-        }
-    }
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 550px;
 }
 
 header {
-    width: 550px;
-    margin: 0 auto;
+    width: 100%;
     text-align: center;
-    color: #B53324;
+    color: var(--cor-vermelho);
     display: flex;
     flex-direction: column;
     gap: 10px;
-    & #instrucao1 {
-        font-family: 'Raleway', sans-serif;
-        font-size: 48px;
-        font-weight: bold;
-    }
-
-    & #instrucao2 {
-        color: #DB6355;
-        font-size: 20px;
-    }
 }
 
-section {
-    font-size: 20px;
-    padding: 20px;
-    margin: 0 auto;
-    width: 550px;
-    border: 1px solid #FFF8F0;
+header #instrucao1 {
+    font-family: var(--fonte-titulo);
+    font-size: clamp(32px, 7vw, 48px);
+    font-weight: bold;
+}
+
+header #instrucao2 {
+    color: #DB6355;
+    font-size: clamp(16px, 4vw, 20px);
+}
+
+section#formulario {
+    font-size: 18px;
+    padding: 25px 20px;
+    width: 100%;
+    border: 1px solid var(--cor-borda-clara);
     background-color: rgba(255, 248, 240, 0.5);
     border-radius: 20px;
-    font-family: 'Inter', sans-serif;
 }
 
 label {
-    color: #B53324;
+    color: var(--cor-vermelho);
+    display: block;
+    margin-bottom: 6px;
 }
 
 .campo {
     width: 100%;
-    border: 1px solid #B53324;
+    border: 1px solid var(--cor-vermelho);
     background-color: rgba(181, 51, 36, 0.05);
     padding: 15px;
     height: 50px;
     border-radius: 5px;
-    color: #B53324;
+    color: var(--cor-vermelho);
+    font-size: 16px;
 }
 
 .campo::placeholder {
     color: #DB6355;
-    font-family: 'Inter', sans-serif;
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .campo:focus {
-    border:2px solid #B53324;
+    border: 2px solid var(--cor-vermelho);
     outline: none;
-    transition: all 0.1s ease-in-out;
 }
 
 button {
-   width: 100%; 
-   height: 56px;
-   background-color: #B53324;
-   border: none;
-   border-radius: 10px;
-   color: #F4D3CF;
-   font-family: 'Inter', sans-serif;
-   font-size: 20px;
+    width: 100%;
+    height: 56px;
+    background-color: var(--cor-vermelho);
+    border: none;
+    border-radius: 10px;
+    color: #F4D3CF;
+    font-family: var(--fonte-principal);
+    font-size: 20px;
     font-weight: bolder;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
 }
 
 button:hover {
-    filter: drop-shadow(0 0 0.5rem #B53324);
-    transition: all 0.4s ease-in-out;
+    filter: drop-shadow(0 0 0.5rem var(--cor-vermelho));
+}
+
+#instrucao3 {
+    color: var(--cor-vermelho);
+    font-size: 18px;
+    text-align: center;
+}
+
+#instrucao3 a {
+    color: var(--cor-vermelho);
+    font-weight: bolder;
+    text-decoration: underline;
 }
