@@ -1,0 +1,317 @@
+:root {
+    --cor-vermelho: #B53324;
+    --cor-amarelo: #E5A657;
+    --cor-bege: #F5E2CE;
+    --cor-borda-clara: #FFF8F0;
+    --fonte-principal: 'Inter', sans-serif;
+    --fonte-titulo: 'Raleway', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    min-height: 100dvh;
+    font-family: var(--fonte-principal);
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+header.topo,
+body:not(.pagina-auth) > header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: var(--cor-vermelho);
+    min-height: 10dvh;
+    padding: 12px 30px;
+    gap: 15px;
+}
+
+header #logo {
+    display: flex;
+    align-items: center;
+}
+
+header #logo svg {
+    max-width: 180px;
+    height: auto;
+}
+
+header #btn-login {
+    font-size: 18px;
+    font-weight: bolder;
+    width: 220px;
+    height: 48px;
+    padding: 0 15px;
+    border-radius: 70px;
+    border: none;
+    background-color: var(--cor-amarelo);
+    color: var(--cor-bege);
+    font-family: var(--fonte-principal);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+header #btn-login:hover {
+    filter: drop-shadow(0 0 0.5rem var(--cor-amarelo));
+}
+
+footer {
+    background-color: var(--cor-vermelho);
+    color: var(--cor-bege);
+    padding: 16px 10px;
+    font-family: var(--fonte-principal);
+    font-size: 18px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.tela-cardapio {
+    width: 100%;
+    min-height: 100dvh;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    background-color: var(--cor-bege);
+}
+
+.tela-cardapio .cardapio {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 35px;
+    width: 90%;
+    max-width: 1300px;
+    text-align: center;
+}
+
+.tela-cardapio .card {
+    flex: 1 1 300px;
+    max-width: 380px;
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tela-cardapio .titulo-dia,
+.tela-cardapio .titulo-obs,
+.tela-cardapio .titulo-hora {
+    color: var(--cor-vermelho);
+    font-family: var(--fonte-titulo);
+    font-size: clamp(32px, 4vw, 46px);
+    font-weight: bolder;
+}
+
+.tela-cardapio .card-dia {
+    width: 100%;
+    flex: 1;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgba(255, 248, 240, 0.4);
+    border: 1px solid var(--cor-borda-clara);
+}
+
+.tela-cardapio .card-obs {
+    width: 100%;
+    height: 195px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgba(255, 248, 240, 0.4);
+    border: 1px solid var(--cor-borda-clara);
+}
+
+.tela-cardapio section.formulario {
+    font-size: 20px;
+    padding: 15px;
+    margin: 0 auto;
+    font-family: var(--fonte-principal);
+    text-align: left;
+    height: 100%;
+}
+
+.form,
+.form-c2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 12px;
+    height: 100%;
+    --cor-tema-form: var(--cor-vermelho);
+    --cor-borda-input: var(--cor-vermelho);
+    --cor-bg-input: rgba(181, 51, 36, 0.05);
+    --cor-texto-input: #b33a2d;
+}
+
+.form label,
+.form-c2 label {
+    color: var(--cor-tema-form);
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.form .campo,
+.form-c2 .campo {
+    width: 100%;
+    border: 1px solid var(--cor-borda-input);
+    background-color: var(--cor-bg-input);
+    padding: 12px 15px;
+    height: 50px;
+    border-radius: 5px;
+    color: var(--cor-texto-input);
+    font-size: 18px;
+    font-family: var(--fonte-principal);
+}
+
+.form .almoco,
+.form-c2 .almoco,
+#obs {
+    resize: none;
+    border: 1px solid var(--cor-borda-input, var(--cor-vermelho));
+    background-color: var(--cor-bg-input, rgba(181, 51, 36, 0.05));
+    padding: 12px 15px;
+    height: 110px;
+    border-radius: 5px;
+    color: var(--cor-texto-input, var(--cor-vermelho));
+    display: block;
+    width: 100%;
+    font-size: 17px;
+    font-family: var(--fonte-principal);
+}
+
+#obs {
+    height: 100%;
+}
+
+.form .campo:focus,
+.form-c2 .campo:focus,
+.form .almoco:focus,
+.form-c2 .almoco:focus,
+#obs:focus {
+    border: 2px solid var(--cor-tema-form, var(--cor-vermelho));
+    outline: none;
+    transition: all 0.1s ease-in;
+}
+
+.form hr,
+.form-c2 hr {
+    border: 2px solid var(--cor-tema-form);
+    border-radius: 30px;
+}
+
+#divisor {
+    width: 100%;
+    min-height: 70px;
+    padding: 15px 20px;
+    font-family: var(--fonte-principal);
+    font-size: clamp(18px, 3vw, 30px);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--cor-amarelo);
+    color: var(--cor-bege);
+}
+
+.card #instrucao {
+    color: var(--cor-amarelo);
+    font-size: 18px;
+    width: 95%;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.card #btn-editar,
+.card #btn-cadastrar {
+    font-size: 22px;
+    font-weight: bold;
+    width: 100%;
+    height: 65px;
+    padding: 0 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--cor-vermelho);
+    color: var(--cor-bege);
+    font-family: var(--fonte-principal);
+    cursor: pointer;
+    margin-top: auto;
+    transition: all 0.3s ease;
+}
+
+.card #btn-editar:hover,
+.card #btn-cadastrar:hover {
+    filter: drop-shadow(0 0 0.4rem var(--cor-vermelho));
+}
+
+@media (max-width: 992px) {
+    .tela-cardapio .cardapio {
+        width: 95%;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Header responsivo */
+    body:not(.pagina-auth) > header {
+        padding: 12px 16px;
+    }
+
+    header #logo svg {
+        width: 130px;
+    }
+
+    header #btn-login {
+        width: auto;
+        min-width: 140px;
+        height: 40px;
+        font-size: 14px;
+        padding: 0 14px;
+    }
+
+    .tela-cardapio {
+        padding: 40px 15px;
+        gap: 30px;
+    }
+
+    .tela-cardapio .cardapio {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .tela-cardapio .card {
+        max-width: 100%;
+        min-height: auto;
+    }
+
+    .tela-cardapio .card-dia {
+        padding: 5px;
+    }
+
+    .form,
+    .form-c2 {
+        gap: 15px;
+    }
+}
