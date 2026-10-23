@@ -51,10 +51,9 @@ header #logo svg {
     height: auto;
 }
 
-header #btn-login {
+header .btn {
     font-size: 18px;
     font-weight: bolder;
-    width: 220px;
     height: 48px;
     padding: 0 15px;
     border-radius: 70px;
@@ -66,7 +65,19 @@ header #btn-login {
     transition: all 0.3s ease-in-out;
 }
 
+header #btn-login {
+    width: 220px;
+}
+
+header #btn-logout {
+    width: 110px;
+}
+
 header #btn-login:hover {
+    filter: drop-shadow(0 0 0.5rem var(--cor-amarelo));
+}
+
+header #btn-logout:hover {
     filter: drop-shadow(0 0 0.5rem var(--cor-amarelo));
 }
 
